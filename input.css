@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#hero {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)),
+        url('../images/desktop/hero.jpg') no-repeat center;
+    background-size: cover;
+}
+
+@media (max-width: 576px) {
+    #hero {
+       background: linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)),
+            url('../images/mobile/hero-mob.jpg') no-repeat center;
+    }
+}

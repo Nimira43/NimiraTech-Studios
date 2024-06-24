@@ -554,22 +554,80 @@ video {
   --tw-contain-style:  ;
 }
 
-.bg-\[\#111\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 17 17 / var(--tw-bg-opacity));
+.container {
+  width: 100%;
 }
 
-.bg-\[ff4500\] {
-  background-color: ff4500;
+@media (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
 }
 
-.p-5 {
-  padding: 1.25rem;
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+@media (min-width: 976px) {
+  .container {
+    max-width: 976px;
+  }
+}
+
+@media (min-width: 1440px,) {
+  .container {
+    max-width: 1440px,;
+  }
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.font-serif {
+  font-family: Fredericka the Great, serif;
 }
 
 .text-3xl {
@@ -577,7 +635,49 @@ video {
   line-height: 2.25rem;
 }
 
-.text-\[\#ff4500\] {
+.font-bold {
+  font-weight: 700;
+}
+
+.text-\[darkgoldenrod\] {
   --tw-text-opacity: 1;
-  color: rgb(255 69 0 / var(--tw-text-opacity));
+  color: rgb(184 134 11 / var(--tw-text-opacity));
+}
+
+#hero {
+  background: linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)),
+        url('../images/desktop/hero.jpg') no-repeat center;
+  background-size: cover;
+}
+
+@media (max-width: 576px) {
+  #hero {
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)),
+            url('../images/mobile/hero-mob.jpg') no-repeat center;
+  }
+}
+
+.group:hover .group-hover\:border-b {
+  border-bottom-width: 1px;
+}
+
+.group:hover .group-hover\:border-\[\#ff4500\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 69 0 / var(--tw-border-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
 }
